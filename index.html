@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Mushfiqul Islam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" /> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="sidebar-logo">MI</div>
+      <div class="sidebar-name">Mushfiqul Islam</div>
+      <div class="sidebar-role">Web Developer</div>
+    </div>
+    <!-- <div class="nav-label">Navigation</div> -->
+    <ul class="sidebar-nav" id="sidebarNav">
+      <li><a href="#about" class="active"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="sidebar-social">
+      <a href="https://github.com/Mushfiqul21" class="social-icon" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/mushfiqul-islam-m35822" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://wa.me/+8801937635822" class="social-icon" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://facebook.com/mushfiqul.islam.21" target="_blank" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <button class="theme-btn" onclick="toggleTheme()">
+      <i class="fa-solid fa-sun" id="themeIcon"></i>
+      <span id="themeLabel">Light Mode</span>
+      <div class="toggle-track" id="toggleTrack">
+        <div class="toggle-thumb" id="toggleThumb"></div>
+      </div>
+    </button>
+  </aside>
+
+  <main class="main-content">
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="hero-bg"></div>
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge fade-in"><span class="dot"></span> Available for work</div>
+          <h1 class="hero-title fade-in">Hi, I'm <span class="accent-text">Mushfiqul Islam</span><br />I build
+            digital<br />experiences.</h1>
+          <p class="hero-desc fade-in">Web Developer with 1.5+ years of experience crafting scalable web applications,
+            intuitive interfaces, and robust backend systems. Passionate about clean code and thoughtful design.</p>
+          <div class="hero-btns fade-in">
+            <a href="#projects" class="btn-primary-custom"><i class="fa-solid fa-rocket"></i> View Projects</a>
+            <a href="#contact" class="btn-secondary-custom"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+          </div>
+          <!-- <div class="hero-stats fade-in">
+            <div class="stat-item"><div class="stat-num">5+</div><div class="stat-label">Years Exp.</div></div>
+            <div class="stat-item"><div class="stat-num">40+</div><div class="stat-label">Projects</div></div>
+            <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">Clients</div></div>
+            <div class="stat-item"><div class="stat-num">99%</div><div class="stat-label">Satisfaction</div></div>
+          </div> -->
+        </div>
+        <div class="hero-avatar-wrap">
+          <div class="hero-avatar"><img src="img/me2.png" alt=""></div>
+          <!-- <i class="fa-solid fa-user-astronaut" style="position:relative; z-index:1;"></i> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-header fade-in">
+        <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Career</div>
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-timeline">
+        <div class="exp-item fade-in">
+          <div class="exp-period">2024 October — Present</div>
+          <div class="exp-title">Web Developer</div>
+          <div class="exp-company"><i class="fa-solid fa-building"
+              style="font-size:0.75rem;margin-right:0.4rem;color:var(--accent)"></i>SoftHost IT</div>
+          <p class="exp-desc">Led development of a SaaS platform serving 50,000+ users. Built microservice architecture
+            with Node.js, React, and PostgreSQL. Reduced page load time by 65% through optimization strategies.</p>
+        </div>
+        <div class="exp-item fade-in">
+          <div class="exp-period">2024 June — 2024 August</div>
+          <div class="exp-title">Web Developer Intern</div>
+          <div class="exp-company"><i class="fa-solid fa-building"
+              style="font-size:0.75rem;margin-right:0.4rem;color:var(--accent)"></i>BD Coder IT Park</div>
+          <p class="exp-desc">Developed responsive web applications for 15+ clients across e-commerce and fintech.
+            Championed component design system that cut UI development time by 40%.</p>
+        </div>
+        <div class="exp-item fade-in">
+          <div class="exp-period">2023 May — 2024 July</div>
+          <div class="exp-title">Intern</div>
+          <div class="exp-company"><i class="fa-solid fa-building"
+              style="font-size:0.75rem;margin-right:0.4rem;color:var(--accent)"></i>CodemenBD</div>
+          <p class="exp-desc">Built and maintained client websites using HTML, CSS, JavaScript, and PHP. Collaborated
+            closely with design team to deliver pixel-perfect implementations.</p>
+        </div>
+        <!-- <div class="exp-item fade-in">
+          <div class="exp-period">2018 — 2019</div>
+          <div class="exp-title">Freelance Developer</div>
+          <div class="exp-company"><i class="fa-solid fa-globe"
+              style="font-size:0.75rem;margin-right:0.4rem;color:var(--accent)"></i>Self-employed</div>
+          <p class="exp-desc">Delivered 20+ projects for local and international clients. Specialized in WordPress
+            customization, landing pages, and small business websites.</p>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header fade-in">
+        <div class="section-tag"><i class="fa-solid fa-code"></i> Expertise</div>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-card-icon"><i class="fa-brands fa-react"></i></div>
+          <div class="skill-card-title">Frontend Development</div>
+          <div class="skill-tags"><span class="skill-tag">Javascript</span><span class="skill-tag">React</span><span
+              class="skill-tag">Vue.js</span><span class="skill-tag">Jquery</span><span
+              class="skill-tag">Tailwind</span><span class="skill-tag">Bootstrap</span></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>React</span><span>70%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:70%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Vue.Js</span><span>65%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-card-icon" style="background:linear-gradient(135deg,#f05fa0,#ff9a3c)"><i
+              class="fa-brands fa-node-js"></i></div>
+          <div class="skill-card-title">Backend Development</div>
+          <div class="skill-tags"><span class="skill-tag">Node.js</span><span class="skill-tag">PHP</span><span
+              class="skill-tag">Laravel</span><span class="skill-tag">Python</span><span
+              class="skill-tag">Django</span><span class="skill-tag">REST API</span></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>PHP</span><span>80%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:88%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Laravel</span><span>75%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-card-icon" style="background:linear-gradient(135deg,#3c9cf0,#7c6af5)"><i
+              class="fa-solid fa-database"></i></div>
+          <div class="skill-card-title">Database & Cloud</div>
+          <div class="skill-tags"><span class="skill-tag">MySQL</span><span class="skill-tag">PostgreSQL</span><span
+              class="skill-tag">Redis</span><span class="skill-tag">AWS</span><span class="skill-tag">Docker</span><span
+              class="skill-tag">Firebase</span></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>MySQl</span><span>80%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:82%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>AWS / Docker</span><span>60%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-card-icon" style="background:linear-gradient(135deg,#22c55e,#3c9cf0)"><i
+              class="fa-solid fa-palette"></i></div>
+          <div class="skill-card-title">Design & Tools</div>
+          <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span
+              class="skill-tag">Linux</span><span class="skill-tag">Postman</span><span
+              class="skill-tag">Figma</span><span class="skill-tag">Canva</span></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Postman</span><span>65%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:78%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Git / DevOps</span><span>75%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header fade-in">
+        <div class="section-tag"><i class="fa-solid fa-layer-group"></i> Work</div>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- TAB BUTTONS -->
+      <div class="proj-tabs-nav fade-in">
+        <button class="proj-tab-btn active" data-target="tab-laravel">
+          <i class="fa-brands fa-laravel"></i> Laravel <span class="tab-count">3</span>
+        </button>
+        <button class="proj-tab-btn" data-target="tab-php">
+          <i class="fa-brands fa-php"></i> PHP <span class="tab-count">3</span>
+        </button>
+        <button class="proj-tab-btn" data-target="tab-webdesign">
+          <i class="fa-solid fa-pen-nib"></i> Web Design <span class="tab-count">3</span>
+        </button>
+        <button class="proj-tab-btn" data-target="tab-wordpress">
+          <i class="fa-brands fa-wordpress"></i> WordPress <span class="tab-count">3</span>
+        </button>
+      </div>
+
+      <!-- LARAVEL PANEL -->
+      <div class="proj-tab-panel tab-active" id="tab-laravel">
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#ff2d20,#7c6af5)"><span>🛒</span></div>
+          <div class="project-body">
+            <div class="project-title">Multi-Vendor E-Commerce</div>
+            <p class="project-desc">Full-featured marketplace with multi-seller support, order tracking, SSLCommerz
+              payment gateway, and a powerful admin panel.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">Laravel</span><span
+                  class="skill-tag">Livewire</span><span class="skill-tag">MySQL</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#f05fa0,#ff9a3c)"><span>📋</span></div>
+          <div class="project-body">
+            <div class="project-title">Project Management SaaS</div>
+            <p class="project-desc">Trello-style Kanban board with drag-and-drop, team roles, time tracking, and Slack
+              notification integration.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">Laravel</span><span
+                  class="skill-tag">Vue.js</span><span class="skill-tag">Redis</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#3c9cf0,#7c6af5)"><span>🏥</span></div>
+          <div class="project-body">
+            <div class="project-title">Hospital Management System</div>
+            <p class="project-desc">Complete HMS with patient records, doctor scheduling, billing, pharmacy inventory,
+              and PDF reports via DomPDF.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">Laravel</span><span class="skill-tag">Blade</span><span
+                  class="skill-tag">DomPDF</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHP PANEL -->
+      <div class="proj-tab-panel" id="tab-php">
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#22c55e,#3c9cf0)"><span>📰</span></div>
+          <div class="project-body">
+            <div class="project-title">News Portal CMS</div>
+            <p class="project-desc">Custom CMS built in pure PHP with multi-category support, editor roles, scheduled
+              publishing, and SEO meta management.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">PHP</span><span class="skill-tag">MySQL</span><span
+                  class="skill-tag">Bootstrap</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#f0a43c,#f05fa0)"><span>🎓</span></div>
+          <div class="project-body">
+            <div class="project-title">Student Result System</div>
+            <p class="project-desc">School result management with grade calculation, marksheet PDF export, SMS via
+              Twilio, and parent login portal.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">PHP</span><span class="skill-tag">TCPDF</span><span
+                  class="skill-tag">Twilio</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#8b5cf6,#22c55e)"><span>🏨</span></div>
+          <div class="project-body">
+            <div class="project-title">Hotel Booking System</div>
+            <p class="project-desc">Room reservation platform with availability calendar, bKash & card payment, invoice
+              generation, and admin dashboard.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">PHP</span><span class="skill-tag">jQuery</span><span
+                  class="skill-tag">MySQL</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEB DESIGN PANEL -->
+      <div class="proj-tab-panel" id="tab-webdesign">
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#f05fa0,#ffd460)"><span>💼</span></div>
+          <div class="project-body">
+            <div class="project-title">Creative Agency Landing</div>
+            <p class="project-desc">High-converting agency site with GSAP scroll animations, magnetic cursor, parallax
+              hero, and Lottie micro-interactions.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">HTML</span><span class="skill-tag">SCSS</span><span
+                  class="skill-tag">GSAP</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#3c9cf0,#22c55e)"><span>📊</span></div>
+          <div class="project-body">
+            <div class="project-title">SaaS Dashboard UI</div>
+            <p class="project-desc">Pixel-perfect analytics dashboard with dark/light modes, Chart.js visualizations,
+              collapsible sidebar, and data tables.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">HTML</span><span class="skill-tag">Tailwind</span><span
+                  class="skill-tag">Chart.js</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#8b5cf6,#ff9a3c)"><span>🍽️</span></div>
+          <div class="project-body">
+            <div class="project-title">Restaurant Website</div>
+            <p class="project-desc">Elegant restaurant site with animated menu reveal, online reservation form, gallery
+              lightbox, and Google Maps embed.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span
+                  class="skill-tag">Bootstrap</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORDPRESS PANEL -->
+      <div class="proj-tab-panel" id="tab-wordpress">
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#00b9ae,#7c6af5)"><span>🛍️</span></div>
+          <div class="project-body">
+            <div class="project-title">WooCommerce Fashion Store</div>
+            <p class="project-desc">Custom WooCommerce theme with AJAX cart, product filter, wishlist, size guide, and
+              abandoned cart recovery plugin.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">WordPress</span><span
+                  class="skill-tag">WooCommerce</span><span class="skill-tag">ACF</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#f05fa0,#3c9cf0)"><span>📝</span></div>
+          <div class="project-body">
+            <div class="project-title">Corporate Blog & Magazine</div>
+            <p class="project-desc">Speed-optimised magazine site with custom child theme, custom Gutenberg blocks,
+              advanced SEO setup, and CDN config.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">WordPress</span><span
+                  class="skill-tag">Gutenberg</span><span class="skill-tag">Yoast</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#22c55e,#f0a43c)"><span>🏫</span></div>
+          <div class="project-body">
+            <div class="project-title">University Website</div>
+            <p class="project-desc">Large university site with multilingual support (WPML), events calendar, course
+              catalog CPT, faculty directory, and CRM sync.</p>
+            <div class="project-footer">
+              <div class="project-stack"><span class="skill-tag">WordPress</span><span
+                  class="skill-tag">Elementor</span><span class="skill-tag">WPML</span></div>
+              <div class="project-links"><a href="#" class="project-link"><i class="fa-brands fa-github"></i></a><a
+                  href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header fade-in">
+        <div class="section-tag"><i class="fa-solid fa-envelope"></i> Get in touch</div>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;font-weight:300;">
+            I'm always open to new opportunities, collaborations, or just a friendly chat about develop & design.
+            Drop me a message!</p>
+          <div class="contact-info-item fade-in">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-val">mushfiqulislam21@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-info-item fade-in">
+            <div class="contact-icon" style="background:linear-gradient(135deg,#f05fa0,#ff9a3c)"><i
+                class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-val">+880 1937-635822</div>
+            </div>
+          </div>
+          <div class="contact-info-item fade-in">
+            <div class="contact-icon" style="background:linear-gradient(135deg,#3c9cf0,#7c6af5)"><i
+                class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-val">Khulna, Bangladesh</div>
+            </div>
+          </div>
+          <div class="contact-info-item fade-in">
+            <div class="contact-icon" style="background:linear-gradient(135deg,#22c55e,#3c9cf0)"><i
+                class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="contact-info-label">Availability</div>
+              <div class="contact-info-val">Anytime</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form fade-in">
+          <div class="mb-3"><label class="form-label">Full Name</label><input type="text" class="form-control"
+              placeholder="Your Name" /></div>
+          <div class="mb-3"><label class="form-label">Email Address</label><input type="email" class="form-control"
+              placeholder="yourmail@gmail.com" /></div>
+          <div class="mb-3"><label class="form-label">Subject</label><input type="text" class="form-control"
+              placeholder="Project Inquiry" /></div>
+          <div class="mb-3"><label class="form-label">Message</label><textarea class="form-control"
+              placeholder="Tell me about your project..."></textarea></div>
+          <button class="btn-primary-custom" style="width:100%;justify-content:center;"><i
+              class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>Designed & Built with <span>♥</span> by <span>Mushfiqul Islam</span> · 2026</footer>
+  </main>
+
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
